@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hobby-Musikproduzent – Trap, LoFi, Drill & Hip-Hop Beats. Anhören, kaufen oder custom bestellen.">
+    <title>[DEIN NAME] • Beats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .title-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .hero-bg {
+            background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a0a 70%);
+        }
+        
+        .beat-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .beat-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgb(0 255 170 / 0.25);
+        }
+        
+        .neon-glow {
+            text-shadow: 0 0 15px rgb(0 255 170 / 0.6);
+        }
+        
+        audio::-webkit-media-controls-panel {
+            background: #18181b;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+    <!-- NAVBAR -->
+    <nav class="bg-black/80 backdrop-blur-lg border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-500 rounded-2xl flex items-center justify-center text-3xl shadow-lg shadow-emerald-500/30">♪</div>
+                <h1 class="title-font text-3xl tracking-tighter font-semibold">[DEIN NAME]</h1>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="#beats" class="hover:text-emerald-400 transition-colors">Beats</a>
+                <a href="#shop" class="hover:text-emerald-400 transition-colors">Shop</a>
+                <a href="#about" class="hover:text-emerald-400 transition-colors">Über mich</a>
+                <a href="#contact" class="hover:text-emerald-400 transition-colors">Kontakt</a>
+            </div>
+            
+            <a href="#contact" class="px-7 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center gap-3 transition-all shadow-lg shadow-emerald-500/30">
+                <i class="fas fa-headphones"></i>
+                Beat anfragen
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg min-h-screen flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-10">
+                <div class="inline-flex items-center gap-3 px-5 py-2.5 bg-zinc-900 border border-emerald-500/30 rounded-full text-emerald-400 text-sm">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-400"></span>
+                    </span>
+                    NEUE BEATS DROPPED
+                </div>
+                
+                <h2 class="title-font text-7xl md:text-8xl font-bold tracking-tighter leading-none">
+                    Beats die<br><span class="text-emerald-400 neon-glow">vibrieren.</span>
+                </h2>
+                
+                <p class="text-2xl text-zinc-300 max-w-md">
+                    Trap • LoFi • Drill • Hip-Hop<br>
+                    Hobbymäßig produziert, professionell klingend.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#beats" class="px-10 py-5 bg-emerald-500 hover:bg-white hover:text-zinc-950 text-xl font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
+                        <i class="fas fa-play"></i>
+                        Beats anhören
+                    </a>
+                    <a href="#shop" class="px-10 py-5 border-2 border-emerald-500 hover:bg-emerald-500 hover:text-zinc-950 text-xl font-semibold rounded-3xl transition-all">
+                        Beats kaufen
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative hidden md:block">
+                <div class="absolute inset-0 bg-gradient-to-br from-emerald-400/10 via-transparent to-transparent rounded-[4rem] -rotate-6"></div>
+                <div class="bg-zinc-900/70 backdrop-blur-xl border border-emerald-500/20 rounded-3xl p-8 text-center">
+                    <div class="text-[140px] leading-none opacity-10">♪</div>
+                    <div class="mt-[-60px]">
+                        <div class="text-emerald-400 text-6xl font-bold title-font tracking-tighter">2026</div>
+                        <div class="text-4xl title-font -mt-3">Fresh Beats</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-zinc-500 text-sm">
+            <div>Scroll für Vibes</div>
+            <i class="fas fa-chevron-down animate-bounce mt-2"></i>
+        </div>
+    </header>
+
+    <!-- BEATS SECTION -->
+    <section id="beats" class="max-w-7xl mx-auto px-6 py-24">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+            <div>
+                <span class="uppercase tracking-[3px] text-emerald-400 text-sm font-medium">Portfolio</span>
+                <h3 class="title-font text-6xl font-bold tracking-tighter">Aktuelle Beats</h3>
+            </div>
+            <a href="#shop" class="mt-6 md:mt-0 text-emerald-400 flex items-center gap-3 hover:gap-5 transition-all">
+                Alle Beats im Shop <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Beat 1 -->
+            <div class="beat-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 group">
+                <div class="h-2 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
+                <div class="p-7">
+                    <div class="flex justify-between mb-6">
+                        <div>
+                            <div class="font-semibold text-xl">TRAP HEAVY</div>
+                            <div class="text-zinc-400">138 BPM • Dark Trap</div>
+                        </div>
+                        <span class="text-xs px-4 py-2 bg-zinc-800 rounded-3xl self-start">Preview</span>
+                    </div>
+                    
+                    <audio controls class="w-full mb-6 accent-emerald-400">
+                        <source src="https://yourdomain.com/beats/trap-heavy.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <button onclick="buyBeat('TRAP HEAVY')" 
+                            class="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
+                        <i class="fas fa-shopping-bag"></i>
+                        Beat kaufen
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Beat 2 -->
+            <div class="beat-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 group">
+                <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-400"></div>
+                <div class="p-7">
+                    <div class="flex justify-between mb-6">
+                        <div>
+                            <div class="font-semibold text-xl">LOFI CHILL</div>
+                            <div class="text-zinc-400">82 BPM • LoFi Hip-Hop</div>
+                        </div>
+                        <span class="text-xs px-4 py-2 bg-zinc-800 rounded-3xl self-start">Preview</span>
+                    </div>
+                    
+                    <audio controls class="w-full mb-6 accent-emerald-400">
+                        <source src="https://yourdomain.com/beats/lofi-chill.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <button onclick="buyBeat('LOFI CHILL')" 
+                            class="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
+                        <i class="fas fa-shopping-bag"></i>
+                        Beat kaufen
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Beat 3 -->
+            <div class="beat-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 group">
+                <div class="h-2 bg-gradient-to-r from-red-400 to-orange-400"></div>
+                <div class="p-7">
+                    <div class="flex justify-between mb-6">
+                        <div>
+                            <div class="font-semibold text-xl">DRILL BANGER</div>
+                            <div class="text-zinc-400">145 BPM • UK Drill</div>
+                        </div>
+                        <span class="text-xs px-4 py-2 bg-zinc-800 rounded-3xl self-start">Preview</span>
+                    </div>
+                    
+                    <audio controls class="w-full mb-6 accent-emerald-400">
+                        <source src="https://yourdomain.com/beats/drill-banger.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <button onclick="buyBeat('DRILL BANGER')" 
+                            class="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
+                        <i class="fas fa-shopping-bag"></i>
+                        Beat kaufen
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Beat 4 -->
+            <div class="beat-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 group">
+                <div class="h-2 bg-gradient-to-r from-blue-400 to-cyan-400"></div>
+                <div class="p-7">
+                    <div class="flex justify-between mb-6">
+                        <div>
+                            <div class="font-semibold text-xl">HIP-HOP GROOVE</div>
+                            <div class="text-zinc-400">90 BPM • Boom Bap</div>
+                        </div>
+                        <span class="text-xs px-4 py-2 bg-zinc-800 rounded-3xl self-start">Preview</span>
+                    </div>
+                    
+                    <audio controls class="w-full mb-6 accent-emerald-400">
+                        <source src="https://yourdomain.com/beats/hiphop-groove.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <button onclick="buyBeat('HIP-HOP GROOVE')" 
+                            class="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
+                        <i class="fas fa-shopping-bag"></i>
+                        Beat kaufen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" class="bg-black py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-emerald-400 uppercase tracking-widest text-sm">Beat Store</span>
+                <h3 class="title-font text-6xl font-bold tracking-tighter mt-3">Beats kaufen</h3>
+                <p class="text-zinc-400 mt-4 max-w-md mx-auto">Lease oder Exclusive – direkt und unkompliziert.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-900 rounded-3xl p-8 border border-zinc-700 hover:border-emerald-500 transition-all">
+                    <div class="text-3xl font-bold mb-1">TRAP HEAVY</div>
+                    <div class="text-emerald-400 text-4xl font-semibold mb-8">20 €</div>
+                    <ul class="space-y-3 text-sm mb-10 text-zinc-300">
+                        <li>✓ Unlimited Lease</li>
+                        <li>✓ WAV + MP3</li>
+                        <li>✓ Stems verfügbar</li>
+                    </ul>
+                    <button onclick="buyBeat('TRAP HEAVY')" class="w-full py-5 bg-emerald-500 text-zinc-950 font-semibold rounded-3xl hover:scale-105 transition-all">
+                        Jetzt anfragen
+                    </button>
+                </div>
+                
+                <div class="bg-zinc-900 rounded-3xl p-8 border border-zinc-700 hover:border-emerald-500 transition-all relative">
+                    <div class="absolute -top-3 right-6 bg-emerald-500 text-zinc-950 text-xs font-bold px-5 py-1 rounded-3xl">BESTSELLER</div>
+                    <div class="text-3xl font-bold mb-1">LOFI CHILL</div>
+                    <div class="text-emerald-400 text-4xl font-semibold mb-8">25 €</div>
+                    <ul class="space-y-3 text-sm mb-10 text-zinc-300">
+                        <li>✓ Unlimited Lease</li>
+                        <li>✓ WAV + MP3</li>
+                        <li>✓ Stems verfügbar</li>
+                    </ul>
+                    <button onclick="buyBeat('LOFI CHILL')" class="w-full py-5 bg-emerald-500 text-zinc-950 font-semibold rounded-3xl hover:scale-105 transition-all">
+                        Jetzt anfragen
+                    </button>
+                </div>
+                
+                <div class="bg-zinc-900 rounded-3xl p-8 border border-zinc-700 hover:border-emerald-500 transition-all">
+                    <div class="text-3xl font-bold mb-1">DRILL BANGER</div>
+                    <div class="text-emerald-400 text-4xl font-semibold mb-8">60 €</div>
+                    <ul class="space-y-3 text-sm mb-10 text-zinc-300">
+                        <li>✓ Exclusive Rechte</li>
+                        <li>✓ Kein Tag</li>
+                        <li>✓ WAV + Stems</li>
+                    </ul>
+                    <button onclick="buyBeat('DRILL BANGER')" class="w-full py-5 bg-emerald-500 text-zinc-950 font-semibold rounded-3xl hover:scale-105 transition-all">
+                        Jetzt anfragen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-12 gap-16">
+            <div class="md:col-span-7">
+                <h3 class="title-font text-6xl font-bold tracking-tighter">Hallo, ich bin [DEIN NAME]</h3>
+                <div class="mt-10 space-y-6 text-lg text-zinc-300">
+                    <p>Hobby-Musikproduzent mit Leidenschaft für Trap, LoFi, Drill und Hip-Hop.</p>
+                    <p>Alle Beats sind selbst produziert – clean, fett und ready für deine Tracks.</p>
+                    <p>Schreib mir gerne, wenn dir etwas gefällt oder du einen Custom-Beat brauchst.</p>
+                </div>
+            </div>
+            <div class="md:col-span-5 bg-zinc-900 rounded-3xl p-10 text-sm space-y-8">
+                <div class="flex gap-6">
+                    <i class="fas fa-microphone-lines text-4xl text-emerald-400"></i>
+                    <div>FL Studio + hochwertige VSTs</div>
+                </div>
+                <div class="flex gap-6">
+                    <i class="fas fa-heart text-4xl text-emerald-400"></i>
+                    <div>100% original, keine Sample-Packs</div>
+                </div>
+                <div class="flex gap-6">
+                    <i class="fas fa-headphones text-4xl text-emerald-400"></i>
+                    <div>Für Künstler, die echte Vibes suchen</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-black py-24">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h3 class="title-font text-6xl font-bold tracking-tighter mb-6">Lass uns einen Beat machen</h3>
+            <p class="text-zinc-400 mb-12">Ob Kauf, Custom-Beat oder einfach nur Feedback – ich antworte schnell.</p>
+            
+            <form id="contact-form" class="space-y-8">
+                <input type="text" id="name" placeholder="Dein Name" required class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-8 py-6 focus:outline-none focus:border-emerald-400">
+                <input type="email" id="email" placeholder="Deine E-Mail" required class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-8 py-6 focus:outline-none focus:border-emerald-400">
+                <textarea id="message" rows="6" placeholder="Welchen Beat möchtest du? Oder schreib einfach drauf los..." required class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-8 py-6 focus:outline-none focus:border-emerald-400"></textarea>
+                
+                <button type="submit" class="w-full py-7 bg-emerald-500 hover:bg-emerald-400 text-xl font-semibold text-zinc-950 rounded-3xl transition-all">
+                    Nachricht senden
+                </button>
+            </form>
+            
+            <div class="mt-10 text-zinc-500">
+                Oder direkt: <a href="mailto:[DEINE-EMAIL@EXAMPLE.COM]" class="text-emerald-400 underline">[DEINE-EMAIL@EXAMPLE.COM]</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-zinc-950 border-t border-zinc-800 py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center gap-8 text-3xl mb-10 text-zinc-400">
+                <a href="#" class="hover:text-emerald-400"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-emerald-400"><i class="fab fa-soundcloud"></i></a>
+                <a href="#" class="hover:text-emerald-400"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="text-zinc-500">© 2026 [DEIN NAME] – Hobby Beats mit Seele</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu (falls du später erweitern willst)
+        // Formular
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Nachricht gesendet! Ich melde mich bald bei dir.');
+            this.reset();
+        });
+        
+        function buyBeat(beatName) {
+            document.getElementById('message').value = `Hallo! Ich interessiere mich für den Beat "${beatName}".`;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        console.log('%cWebsite angepasst und bereit zum Hochladen!', 'color:#00ffaa');
+    </script>
+</body>
+</html>
