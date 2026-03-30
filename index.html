@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prodsedde • Beats</title>
+    <title>prodsedde • Beats</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
@@ -22,17 +22,33 @@
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-emerald-500 rounded-2xl flex items-center justify-center text-3xl shadow-lg shadow-emerald-500/30">♪</div>
-                <h1 class="title-font text-3xl tracking-tighter font-semibold">Prodsedde</h1>
+                <h1 class="title-font text-3xl tracking-tighter font-semibold">prodsedde</h1>
             </div>
-            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
-                <a href="#beats" class="hover:text-emerald-400 transition-colors">Beats</a>
-                <a href="#about" class="hover:text-emerald-400 transition-colors">Über mich</a>
-                <a href="#contact" class="hover:text-emerald-400 transition-colors">Kontakt</a>
+
+            <!-- Sprachumschalter + Social Links -->
+            <div class="flex items-center gap-6">
+                <!-- Sprache -->
+                <div class="flex border border-zinc-700 rounded-3xl overflow-hidden text-sm font-medium">
+                    <button onclick="switchLanguage('de')" id="lang-de"
+                            class="px-5 py-2 bg-emerald-500 text-zinc-950 transition-all">
+                        DE
+                    </button>
+                    <button onclick="switchLanguage('en')" id="lang-en"
+                            class="px-5 py-2 hover:bg-zinc-800 transition-all">
+                        EN
+                    </button>
+                </div>
+
+                <!-- Social Links -->
+                <a href="https://instagram.com/prodsedde" target="_blank" 
+                   class="text-emerald-400 hover:text-emerald-300 transition-colors">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://youtube.com/@prodsedde" target="_blank" 
+                   class="text-emerald-400 hover:text-emerald-300 transition-colors">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
             </div>
-            <a href="https://instagram.com/prodsedde" target="_blank" 
-               class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
-                <i class="fab fa-instagram text-2xl"></i>
-            </a>
         </div>
     </nav>
 
@@ -40,11 +56,11 @@
     <header class="hero-bg min-h-screen flex items-center relative">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="title-font text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
-                Hey, ich bin <span class="text-emerald-400 neon-glow">Sedde</span><br>
+                Hey, ich bin <span class="text-emerald-400 neon-glow">sedde</span><br>
                 und das sind meine Beats.
             </h2>
             <p class="text-2xl text-zinc-300 max-w-2xl mx-auto">
-                Dark Trap, Future Banger und alles dazwischen – mit viel Liebe und 808s produziert.
+                Dark Trap, Drill Banger und alles dazwischen – mit viel Liebe und 808s produziert.
             </p>
             <div class="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
                 <a href="#beats" class="px-10 py-5 bg-emerald-500 hover:bg-white hover:text-zinc-950 text-xl font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
@@ -61,12 +77,11 @@
     <section id="beats" class="max-w-7xl mx-auto px-6 py-24">
         <div class="text-center mb-16">
             <span class="uppercase tracking-[3px] text-emerald-400 text-sm font-medium">Portfolio</span>
-            <h3 class="title-font text-6xl font-bold tracking-tighter mt-3">Aktuelle Vibes</h3>
+            <h3 class="title-font text-6xl font-bold tracking-tighter mt-3">Aktuelle Tracks</h3>
         </div>
         
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
-            <!-- Beat 1 -->
             <div class="beat-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
                 <div class="h-2 bg-gradient-to-r from-red-500 to-orange-500"></div>
                 <div class="p-8">
@@ -82,12 +97,11 @@
                 </div>
             </div>
 
-            <!-- Beat 2 -->
             <div class="beat-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
                 <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500"></div>
                 <div class="p-8">
-                    <div class="font-semibold text-3xl mb-1">Future Rage 140</div>
-                    <div class="text-zinc-400 mb-6">140 BPM • Aggressive Future Trap</div>
+                    <div class="font-semibold text-3xl mb-1">Dark Violin Trap Beat</div>
+                    <div class="text-zinc-400 mb-6">140 BPM • Trap</div>
                     <audio controls class="w-full accent-emerald-400 mb-6">
                         <source src="https://prodsedde.github.io/beats/future140banger2.mp3" type="audio/mpeg">
                     </audio>
@@ -114,7 +128,7 @@
                     Aus einem kleinen Zeitvertreib wurde schnell eine richtige Leidenschaft.
                 </p>
                 <p class="text-emerald-400">
-                    Heute produziere ich mit viel Herzblut Trap, Dark und Future Beats und freue mich riesig, 
+                    Heute produziere ich mit viel Herzblut Trap, Drill, oder sogar RnB Beats und freue mich riesig, 
                     wenn andere Künstler meine Sounds für ihre Tracks nutzen.
                 </p>
             </div>
@@ -142,22 +156,39 @@
                     <i class="fab fa-instagram"></i>
                     @prodsedde auf Instagram
                 </a>
+                
+                <a href="https://youtube.com/@prodsedde" target="_blank"
+                   class="flex items-center justify-center gap-4 border-2 border-red-500 hover:bg-red-500 hover:text-white py-7 rounded-3xl text-2xl font-semibold transition-all">
+                    <i class="fab fa-youtube"></i>
+                    @prodsedde auf YouTube
+                </a>
             </div>
-            
-            <p class="mt-10 text-zinc-500 text-sm">
-                Du kannst mir auch gerne direkt schreiben, welchen Beat du haben möchtest.
-            </p>
         </div>
     </section>
 
     <footer class="bg-black py-12 text-center text-zinc-500">
-        <p>© 2026 Prodsedde (Sedde) – Mit Leidenschaft produziert</p>
+        <p>© 2026 prodsedde (sedde) – Mit Leidenschaft produziert</p>
     </footer>
 
     <script>
         function buyBeat(beatName) {
             const message = `Hallo Sedde! Ich interessiere mich für den Beat "${beatName}".`;
             window.location.href = `mailto:sedtoolit@web.de?subject=Beat-Anfrage: ${beatName}&body=${encodeURIComponent(message)}`;
+        }
+
+        // Einfacher Sprachumschalter (aktuell nur Hinweis)
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                alert("🇬🇧 Englische Version kommt bald!\n\nDie Seite ist aktuell nur auf Deutsch verfügbar.");
+            } else {
+                alert("🇩🇪 Du bist bereits auf der deutschen Version.");
+            }
+            
+            // Button Highlight aktualisieren
+            document.getElementById('lang-de').classList.toggle('bg-emerald-500', lang === 'de');
+            document.getElementById('lang-de').classList.toggle('text-zinc-950', lang === 'de');
+            document.getElementById('lang-en').classList.toggle('bg-emerald-500', lang === 'en');
+            document.getElementById('lang-en').classList.toggle('text-zinc-950', lang === 'en');
         }
     </script>
 </body>
