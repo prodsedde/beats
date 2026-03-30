@@ -26,95 +26,74 @@
             </div>
             <div class="hidden md:flex items-center gap-10 text-sm font-medium">
                 <a href="#beats" class="hover:text-emerald-400 transition-colors">Beats</a>
-                <a href="#shop" class="hover:text-emerald-400 transition-colors">Shop</a>
                 <a href="#about" class="hover:text-emerald-400 transition-colors">Über mich</a>
                 <a href="#contact" class="hover:text-emerald-400 transition-colors">Kontakt</a>
             </div>
-            <a href="#contact" class="px-7 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center gap-3 transition-all">
-                Beat anfragen
+            <a href="https://instagram.com/prodsedde" target="_blank" 
+               class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
+                <i class="fab fa-instagram text-2xl"></i>
             </a>
         </div>
     </nav>
 
     <!-- HERO -->
     <header class="hero-bg min-h-screen flex items-center relative">
-        <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
-            <div class="space-y-10">
-                <div class="inline-flex items-center gap-3 px-5 py-2.5 bg-zinc-900 border border-emerald-500/30 rounded-full text-emerald-400 text-sm">
-                    <span class="relative flex h-3 w-3">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-400"></span>
-                    </span>
-                    NEUE BEATS DROPPED
-                </div>
-                <h2 class="title-font text-7xl md:text-8xl font-bold tracking-tighter leading-none">
-                    Beats die<br><span class="text-emerald-400 neon-glow">vibrieren.</span>
-                </h2>
-                <p class="text-2xl text-zinc-300 max-w-md">
-                    Trap • Dark • Future Banger<br>
-                    Hobbymäßig produziert von Sedde.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-5">
-                    <a href="#beats" class="px-10 py-5 bg-emerald-500 hover:bg-white hover:text-zinc-950 text-xl font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
-                        <i class="fas fa-play"></i> Beats anhören
-                    </a>
-                    <a href="#contact" class="px-10 py-5 border-2 border-emerald-500 hover:bg-emerald-500 hover:text-zinc-950 text-xl font-semibold rounded-3xl transition-all">
-                        Beat anfragen
-                    </a>
-                </div>
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="title-font text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
+                Hey, ich bin <span class="text-emerald-400 neon-glow">Sedde</span><br>
+                und das sind meine Beats.
+            </h2>
+            <p class="text-2xl text-zinc-300 max-w-2xl mx-auto">
+                Dark Trap, Future Banger und alles dazwischen – mit viel Liebe und 808s produziert.
+            </p>
+            <div class="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="#beats" class="px-10 py-5 bg-emerald-500 hover:bg-white hover:text-zinc-950 text-xl font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
+                    <i class="fas fa-play"></i> Beats anhören
+                </a>
+                <a href="#contact" class="px-10 py-5 border-2 border-emerald-500 hover:bg-emerald-500 hover:text-zinc-950 text-xl font-semibold rounded-3xl transition-all">
+                    Mit mir sprechen
+                </a>
             </div>
         </div>
     </header>
 
     <!-- BEATS SECTION -->
     <section id="beats" class="max-w-7xl mx-auto px-6 py-24">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16">
-            <div>
-                <span class="uppercase tracking-[3px] text-emerald-400 text-sm font-medium">Portfolio</span>
-                <h3 class="title-font text-6xl font-bold tracking-tighter">Aktuelle Beats</h3>
-            </div>
+        <div class="text-center mb-16">
+            <span class="uppercase tracking-[3px] text-emerald-400 text-sm font-medium">Portfolio</span>
+            <h3 class="title-font text-6xl font-bold tracking-tighter mt-3">Aktuelle Vibes</h3>
         </div>
         
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
             <!-- Beat 1 -->
             <div class="beat-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
-                <div class="h-2 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
-                <div class="p-7">
-                    <div class="flex justify-between mb-6">
-                        <div>
-                            <div class="font-semibold text-xl">Dark 160 BPM</div>
-                            <div class="text-zinc-400">160 BPM • Dark Trap</div>
-                        </div>
-                        <span class="text-xs px-4 py-2 bg-zinc-800 rounded-3xl">Preview</span>
-                    </div>
-                    <audio controls class="w-full mb-6 accent-emerald-400">
+                <div class="h-2 bg-gradient-to-r from-red-500 to-orange-500"></div>
+                <div class="p-8">
+                    <div class="font-semibold text-3xl mb-1">Dark Night Pulse</div>
+                    <div class="text-zinc-400 mb-6">160 BPM • Dark Trap</div>
+                    <audio controls class="w-full accent-emerald-400 mb-6">
                         <source src="https://prodsedde.github.io/beats/Dark160BPMBeat.mp3" type="audio/mpeg">
                     </audio>
-                    <button onclick="buyBeat('Dark 160 BPM')" 
-                            class="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center justify-center gap-3">
-                        <i class="fas fa-shopping-bag"></i> Beat kaufen
+                    <button onclick="buyBeat('Dark Night Pulse')" 
+                            class="w-full py-5 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
+                        <i class="fas fa-shopping-bag"></i> Beat sichern
                     </button>
                 </div>
             </div>
 
             <!-- Beat 2 -->
             <div class="beat-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
-                <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-400"></div>
-                <div class="p-7">
-                    <div class="flex justify-between mb-6">
-                        <div>
-                            <div class="font-semibold text-xl">Future 140 Banger</div>
-                            <div class="text-zinc-400">140 BPM • Future Trap</div>
-                        </div>
-                        <span class="text-xs px-4 py-2 bg-zinc-800 rounded-3xl">Preview</span>
-                    </div>
-                    <audio controls class="w-full mb-6 accent-emerald-400">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                <div class="p-8">
+                    <div class="font-semibold text-3xl mb-1">Future Rage 140</div>
+                    <div class="text-zinc-400 mb-6">140 BPM • Aggressive Future Trap</div>
+                    <audio controls class="w-full accent-emerald-400 mb-6">
                         <source src="https://prodsedde.github.io/beats/future140banger2.mp3" type="audio/mpeg">
                     </audio>
-                    <button onclick="buyBeat('Future 140 Banger')" 
-                            class="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center justify-center gap-3">
-                        <i class="fas fa-shopping-bag"></i> Beat kaufen
+                    <button onclick="buyBeat('Future Rage 140')" 
+                            class="w-full py-5 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold rounded-3xl flex items-center justify-center gap-3 transition-all">
+                        <i class="fas fa-shopping-bag"></i> Beat sichern
                     </button>
                 </div>
             </div>
@@ -122,53 +101,64 @@
         </div>
     </section>
 
-    <!-- SHOP (vereinfacht) -->
-    <section id="shop" class="bg-black py-20">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h3 class="title-font text-5xl font-bold tracking-tighter mb-6">Beats kaufen</h3>
-            <p class="text-zinc-400 mb-10">Schreib mir einfach, welchen Beat du möchtest.</p>
-            <a href="#contact" class="inline-block px-12 py-5 bg-emerald-500 text-zinc-950 font-semibold text-xl rounded-3xl hover:bg-emerald-400 transition-all">
-                Jetzt Kontakt aufnehmen
-            </a>
+    <!-- ÜBER MICH -->
+    <section id="about" class="bg-black py-24">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h3 class="title-font text-5xl font-bold tracking-tighter mb-10">Meine Story</h3>
+            <div class="text-lg text-zinc-300 leading-relaxed space-y-6">
+                <p>
+                    Alles fing während der Corona-Zeit an. Wie viele andere saß ich viel zu Hause und suchte nach einem kreativen Ventil.
+                </p>
+                <p>
+                    Ich habe einfach mal angefangen, Beats zu produzieren – erst nur zum Spaß, dann immer ernsthafter. 
+                    Aus einem kleinen Zeitvertreib wurde schnell eine richtige Leidenschaft.
+                </p>
+                <p class="text-emerald-400">
+                    Heute produziere ich mit viel Herzblut Trap, Dark und Future Beats und freue mich riesig, 
+                    wenn andere Künstler meine Sounds für ihre Tracks nutzen.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="py-24 bg-zinc-900">
-        <div class="max-w-2xl mx-auto px-6">
-            <h3 class="title-font text-6xl font-bold tracking-tighter text-center mb-10">Lass uns reden</h3>
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h3 class="title-font text-6xl font-bold tracking-tighter mb-6">Lass uns zusammenarbeiten</h3>
+            <p class="text-xl text-zinc-400 mb-12">
+                Ob du einen Beat kaufen, einen Custom-Beat brauchst oder einfach nur Feedback geben möchtest – 
+                ich antworte immer persönlich.
+            </p>
             
-            <form id="contact-form" class="space-y-6">
-                <input type="text" id="name" placeholder="Dein Name" class="w-full bg-zinc-800 border border-zinc-700 rounded-3xl px-8 py-6 focus:outline-none focus:border-emerald-400">
-                <input type="email" id="email" placeholder="Deine E-Mail" class="w-full bg-zinc-800 border border-zinc-700 rounded-3xl px-8 py-6 focus:outline-none focus:border-emerald-400">
-                <textarea id="message" rows="6" placeholder="Welchen Beat möchtest du? (z.B. Dark 160 BPM)" class="w-full bg-zinc-800 border border-zinc-700 rounded-3xl px-8 py-6 focus:outline-none focus:border-emerald-400"></textarea>
+            <div class="flex flex-col gap-6">
+                <a href="mailto:sedtoolit@web.de" 
+                   class="flex items-center justify-center gap-4 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 py-7 rounded-3xl text-2xl font-semibold transition-all">
+                    <i class="fas fa-envelope"></i>
+                    sedtoolit@web.de
+                </a>
                 
-                <button type="submit" class="w-full py-7 bg-emerald-500 hover:bg-emerald-400 text-xl font-semibold text-zinc-950 rounded-3xl transition-all">
-                    Nachricht senden
-                </button>
-            </form>
-            
-            <div class="text-center mt-8 text-zinc-400">
-                Oder direkt per Mail: <a href="mailto:sedtoolit@web.de" class="text-emerald-400 underline">sedtoolit@web.de</a>
+                <a href="https://instagram.com/prodsedde" target="_blank"
+                   class="flex items-center justify-center gap-4 border-2 border-emerald-400 hover:bg-emerald-400 hover:text-zinc-950 py-7 rounded-3xl text-2xl font-semibold transition-all">
+                    <i class="fab fa-instagram"></i>
+                    @prodsedde auf Instagram
+                </a>
             </div>
+            
+            <p class="mt-10 text-zinc-500 text-sm">
+                Du kannst mir auch gerne direkt schreiben, welchen Beat du haben möchtest.
+            </p>
         </div>
     </section>
 
-    <footer class="bg-black py-12 text-center text-zinc-500 text-sm">
-        <p>© 2026 Prodsedde (Sedde) – Hobby Beats</p>
+    <footer class="bg-black py-12 text-center text-zinc-500">
+        <p>© 2026 Prodsedde (Sedde) – Mit Leidenschaft produziert</p>
     </footer>
 
     <script>
         function buyBeat(beatName) {
-            document.getElementById('message').value = `Hallo! Ich interessiere mich für den Beat "${beatName}".`;
-            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            const message = `Hallo Sedde! Ich interessiere mich für den Beat "${beatName}".`;
+            window.location.href = `mailto:sedtoolit@web.de?subject=Beat-Anfrage: ${beatName}&body=${encodeURIComponent(message)}`;
         }
-
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('✅ Nachricht gesendet! Sedde meldet sich bald bei dir.');
-            this.reset();
-        });
     </script>
 </body>
 </html>
